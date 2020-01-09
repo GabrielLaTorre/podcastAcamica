@@ -113,6 +113,8 @@ label span:after {
     transition-delay: 0s, .25s;
 }
 
+
+
 @media (min-width: 321px) {
     header {
         width: 100%;
@@ -208,5 +210,38 @@ label span:after {
     li a:active {
         text-decoration: line-through;
         color: #060a248f ;
+    }
+
+    .background {
+        position: absolute;
+        top: 530px;
+        width: 100%;
+        height: 1042px;
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        transform: skewY(-6deg);
+        z-index: 5;
+    }
+    
+    .tittle {
+        position: absolute;
+        top: 650px;
+        left: 200px;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 48px;
+        color: #ffffff;
+        z-index: 10;
+        font-weight: lighter;
+    }
+
+    article {
+        display: flex;
+        justify-content: space-around;
+        align-content: space-between;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 740px;
+        z-index: 10;
+        width: 100%;
+        height: 536px;
     }
 }
