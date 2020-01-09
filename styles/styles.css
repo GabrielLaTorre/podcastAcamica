@@ -216,7 +216,7 @@ label span:after {
         position: absolute;
         top: 530px;
         width: 100%;
-        height: 1042px;
+        height: 950px;
         background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
         transform: skewY(-6deg);
         z-index: 5;
