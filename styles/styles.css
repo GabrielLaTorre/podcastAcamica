@@ -292,8 +292,11 @@ article {
     }
 
     .invitados h2 {
-        font-family: 'IBM Plex Sans', sans-serif;
+        margin-left: 200px;
+        margin-bottom: 40px;
+        font-family: 'IBM Plex Sans', sans-serif;   
         font-size: 48px;
+        font-weight: lighter;
         color: #060A24;
         letter-spacing: 0;
     }
@@ -314,7 +317,7 @@ article {
     }
 
     .photos img {
-        width: 32%;
+        width: 33.3%;
         height: 364px;
     }
 }
