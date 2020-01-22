@@ -113,7 +113,65 @@ label span:after {
     transition-delay: 0s, .25s;
 }
 
-article {
+h1 {
+    margin-left: 100px;
+    margin-right: 200px;
+    font-size: 3em;
+    font-weight: lighter;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #060A24;
+}
+
+h1 + p{
+    margin: 50px 5%;
+    font-family: 'IBM Plex Mono', monospace;
+    color: #060A24;
+}
+
+
+.word1 {
+    text-decoration: line-through;
+}
+
+.word2 {
+    color: #0000EC;
+}
+
+button {
+    margin: 0% 5%;
+    width: 90%;
+    height: 56px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 18px;
+    font-weight: bold;
+    color: #060A24;
+    border: none;
+    background: #00F3BB;
+}
+
+.background {
+    position: relative;
+    top: 80px;
+    width: 100%;
+    height: 950px;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    transform: skewY(-5deg);
+    z-index: 5;
+}
+
+.tittle {
+    position: absolute;
+    top: 550px;
+    left: 50px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 48px;
+    color: #ffffff;
+    z-index: 10;
+    font-weight: lighter;
+}
+
+
+.media {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -126,8 +184,7 @@ article {
 
 
 
-@media (min-width: 321px) {
-
+@media (min-width: 951px) {
     img {
         margin: 0%;
     }
@@ -136,7 +193,6 @@ article {
         width: 100%;
         height: 80px;
         display: flex;
-        justify-content: space-between;
     }
 
     h1 {
@@ -150,20 +206,27 @@ article {
 
     h1 + p{
         font-family: 'IBM Plex Mono', monospace;
-        margin-left: 200px;
+        margin: 0% 0% 0% 200px;
         color: #060A24;
     }
 
     button {
         margin-top: 72px;
         margin-left: 200px;
-        width: 226px;
+        width: 15.7%;
         height: 56px;
         font-family: 'IBM Plex Mono', monospace;
         font-size: 18px;
+        font-weight: bold;
         color: #060A24;
         border: none;
         background: #00F3BB;
+    }
+
+    button:hover {
+        color: white;
+        cursor: pointer;
+        background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
     }
 
     .word1 {
@@ -199,7 +262,6 @@ article {
         position: static;
         display: flex;
         flex-direction: row;
-        width: max-content;
         width: 100%;
         height: 100%;
         padding: 0  ;
@@ -230,11 +292,11 @@ article {
 
     .background {
         position: relative;
-        top: 100px;
+        top: 90px;
         width: 100%;
         height: 950px;
         background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-        transform: skewY(-6deg);
+        transform: skewY(-5deg);
         z-index: 5;
     }
     
@@ -274,10 +336,10 @@ article {
         }
 
     .phone {
-        width: 457.6px;
+        width: 31.8%;
         height: 660px;
         position: relative;
-        bottom: 40px;
+        bottom: 35px;
         left: 150px;
         z-index: 10;
     }
@@ -338,7 +400,7 @@ article {
     }
 
     h3 {
-        width: 220px;
+        width: 100%;
         height: 64px;
         margin-top: 29px;
         margin-left: 10px;
@@ -367,11 +429,11 @@ article {
     
     .background2 {
         position: relative;
-        top: 80px;
+        top: 67px;
         width: 100%;
-        height: 518px;
+        height: 490px;
         background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-        transform: skewY(-6deg);
+        transform: skewY(-5deg);
         z-index: 5;
     }
 
@@ -385,5 +447,39 @@ article {
         top: 250px;
         font-weight: lighter;
         z-index: 10;
+    }
+
+    div + button {
+        width: 24%;
+        height: 56px;
+        position: relative;
+        margin-left: 500px;
+        bottom: 280px;
+        z-index: 10;
+    }
+
+    footer {
+        position: absolute;
+        top: 3800px;
+        z-index: 10;
+        height: 125px;
+        width: 100%;
+        background: #ffffff;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .foot-left , .foot-rigth {
+        width: 20%;
+    }
+
+    .foot-left{
+        margin: 20px 0 0 100px;
+    }
+
+    .foot-rigth {
+        margin: 50px 100px 0 0;
+        display: flex;
+        justify-content: space-around;
     }
 }
