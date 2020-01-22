@@ -113,12 +113,86 @@ label span:after {
     transition-delay: 0s, .25s;
 }
 
-@media (min-width: 321px) {
+h1 {
+    margin-left: 100px;
+    margin-right: 200px;
+    font-size: 3em;
+    font-weight: lighter;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #060A24;
+}
+
+h1 + p{
+    margin: 50px 5%;
+    font-family: 'IBM Plex Mono', monospace;
+    color: #060A24;
+}
+
+
+.word1 {
+    text-decoration: line-through;
+}
+
+.word2 {
+    color: #0000EC;
+}
+
+button {
+    margin: 0% 5%;
+    width: 90%;
+    height: 56px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 18px;
+    font-weight: bold;
+    color: #060A24;
+    border: none;
+    background: #00F3BB;
+}
+
+.background {
+    position: relative;
+    top: 80px;
+    width: 100%;
+    height: 950px;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    transform: skewY(-5deg);
+    z-index: 5;
+}
+
+.tittle {
+    position: absolute;
+    top: 550px;
+    left: 50px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 48px;
+    color: #ffffff;
+    z-index: 10;
+    font-weight: lighter;
+}
+
+
+.media {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@media (min-width: 951px) {
+    img {
+        margin: 0%;
+    }
+
     header {
         width: 100%;
         height: 80px;
         display: flex;
-        justify-content: space-between;
     }
 
     h1 {
@@ -130,22 +204,29 @@ label span:after {
         color: #060A24;
     }
 
-    p {
+    h1 + p{
         font-family: 'IBM Plex Mono', monospace;
-        margin-left: 200px;
+        margin: 0% 0% 0% 200px;
         color: #060A24;
     }
 
     button {
         margin-top: 72px;
         margin-left: 200px;
-        width: 226px;
+        width: 15.7%;
         height: 56px;
         font-family: 'IBM Plex Mono', monospace;
         font-size: 18px;
+        font-weight: bold;
         color: #060A24;
         border: none;
         background: #00F3BB;
+    }
+
+    button:hover {
+        color: white;
+        cursor: pointer;
+        background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
     }
 
     .word1 {
@@ -156,7 +237,7 @@ label span:after {
         color: #0000EC;
     }
 
-    img {
+    header img {
         margin-top: 22px;
         margin-left: 100px;
         width: 36px;
@@ -181,7 +262,6 @@ label span:after {
         position: static;
         display: flex;
         flex-direction: row;
-        width: max-content;
         width: 100%;
         height: 100%;
         padding: 0  ;
@@ -208,5 +288,198 @@ label span:after {
     li a:active {
         text-decoration: line-through;
         color: #060a248f ;
+    }
+
+    .background {
+        position: relative;
+        top: 90px;
+        width: 100%;
+        height: 950px;
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        transform: skewY(-5deg);
+        z-index: 5;
+    }
+    
+    .tittle {
+        position: absolute;
+        top: 650px;
+        left: 200px;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 48px;
+        color: #ffffff;
+        z-index: 10;
+        font-weight: lighter;
+    }
+
+    .media {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 740px;
+        z-index: 10;
+        width: 100%;
+        height: 536px;
+    }
+
+    iframe {
+        width: 40.6%;
+        height: 232px;
+        border: none;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: row;
+        }
+
+    .phone {
+        width: 31.8%;
+        height: 660px;
+        position: relative;
+        bottom: 35px;
+        left: 150px;
+        z-index: 10;
+    }
+
+    img + div {
+        margin-top: 170px;
+        margin-left: 200px;
+        width: 464px;
+        height: 204px;
+    }
+
+    div h2{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: lighter;
+        font-size: 48px;
+        color: #060A24;
+        letter-spacing: 0;
+    }
+
+    .invitados h2 {
+        margin-left: 200px;
+        margin-bottom: 40px;
+        font-family: 'IBM Plex Sans', sans-serif;   
+        font-size: 48px;
+        font-weight: lighter;
+        color: #060A24;
+        letter-spacing: 0;
+    }
+
+    div p {
+        padding-top: 30px;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 24px;
+    }
+
+    .photos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .photos img {
+        width: 33.3%;
+        height: 364px;
+    }
+
+    .topicos, .one, .two, .three, .four{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .one, .two, .three, .four{
+        width: 18.1%;
+        height: 130px;
+    }
+
+    h3 {
+        width: 100%;
+        height: 64px;
+        margin-top: 29px;
+        margin-left: 10px;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 24px;
+        color: #060A24;
+        letter-spacing: 0;
+        text-align: center;
+    }
+
+    .topicos div {
+        margin-top: 45px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .topicos h2 {
+        margin-top: 64px;
+        margin-left: 200px;
+        font-family: 'IBM Plex Sans', sans-serif;   
+        font-size: 48px;
+        color: #060A24;
+        letter-spacing: 0;
+        font-weight: lighter;
+    }
+    
+    .background2 {
+        position: relative;
+        top: 67px;
+        width: 100%;
+        height: 490px;
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        transform: skewY(-5deg);
+        z-index: 5;
+    }
+
+    .novedades h2 {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 48px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        text-align: center;
+        position: relative;
+        top: 250px;
+        font-weight: lighter;
+        z-index: 10;
+    }
+
+    div + button {
+        width: 24%;
+        height: 56px;
+        position: relative;
+        margin-left: 500px;
+        bottom: 280px;
+        z-index: 10;
+    }
+
+    footer {
+        position: absolute;
+        top: 3800px;
+        z-index: 10;
+        height: 125px;
+        width: 100%;
+        background: #ffffff;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .foot-left , .foot-rigth {
+        width: 20%;
+    }
+
+    .foot-left{
+        margin: 20px 0 0 100px;
+    }
+
+    .foot-rigth {
+        margin: 50px 100px 0 0;
+        display: flex;
+        justify-content: space-around;
     }
 }
