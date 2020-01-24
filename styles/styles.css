@@ -15,7 +15,7 @@ header {
     display: none;
 }
 
-img {
+header img {
     margin-left: 10px;
 }
 
@@ -182,6 +182,17 @@ button {
     flex-direction: column;
 }
 
+.photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:48px;
+}
+
+.photos img {
+    width: 100%;
+}
 
 
 @media (min-width: 951px) {
@@ -249,10 +260,10 @@ button {
     }
 
     .menu-oculto {
-        width: 35%;
+        width: 40%;
         height: max-content;
         margin-top: 26px;
-        margin-right: 100px;
+        margin-right: 60px;
         display: flex;
         justify-content: flex-end;
         background: inherit;
@@ -344,11 +355,11 @@ button {
         z-index: 10;
     }
 
-    img + div {
+    .from {
         margin-top: 170px;
         margin-left: 200px;
         width: 464px;
-        height: 204px;
+        height: 204px; 
     }
 
     div h2{
@@ -374,19 +385,20 @@ button {
         font-family: 'IBM Plex Mono', monospace;
         font-size: 16px;
         color: #060A24;
-        letter-spacing: 0;
+        letter-spacing: 0;  
         line-height: 24px;
     }
 
     .photos {
+        width: 100%;
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }
 
     .photos img {
         width: 33.3%;
-        height: 364px;
     }
 
     .topicos, .one, .two, .three, .four{
@@ -429,11 +441,11 @@ button {
     
     .background2 {
         position: relative;
-        top: 67px;
+        top: 10px;
         width: 100%;
         height: 490px;
         background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-        transform: skewY(-5deg);
+        clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 0% 100%);
         z-index: 5;
     }
 
@@ -453,7 +465,7 @@ button {
         width: 24%;
         height: 56px;
         position: relative;
-        margin-left: 500px;
+        margin: 72px 38%;
         bottom: 280px;
         z-index: 10;
     }
