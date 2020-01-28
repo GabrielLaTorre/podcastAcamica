@@ -159,10 +159,15 @@ button {
     z-index: 5;
 }
 
+.contain {
+    margin: 0 auto;
+    width: 80%;
+    transform: skewY(5deg);
+}
+
 .tittle {
-    position: absolute;
-    top: 550px;
-    left: 50px;
+    padding-top: 100px;
+    padding-left: 100px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 48px;
     color: #ffffff;
@@ -173,8 +178,50 @@ button {
 
 .media {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 600px;
+}
+
+iframe {
+    width: 40.6%;
+    height: 232px;
+    border: none;
+}
+
+.phone {
+    position: relative;
+    bottom: 35px;
+    left:  0px;
+    z-index: 10;
+}
+
+.from h2{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+}
+
+.from p {
+    padding-top: 30px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;  
+    line-height: 24px;
+}
+
+.invitados h2 {
+    margin: 30px 0px;
+    font-family: 'IBM Plex Sans', sans-serif;   
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
 }
 
 .about {
@@ -192,6 +239,10 @@ button {
 
 .photos img {
     width: 100%;
+}
+
+footer {
+    top: 3714px;
 }
 
 
@@ -303,18 +354,22 @@ button {
 
     .background {
         position: relative;
-        top: 90px;
+        top: 60px;
         width: 100%;
         height: 950px;
         background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
         transform: skewY(-5deg);
         z-index: 5;
     }
+
+    .contain {
+        margin: 0;
+        width: 100%;
+        transform: skewY(5deg);
+    }
     
     .tittle {
-        position: absolute;
-        top: 650px;
-        left: 200px;
+        padding-left: 200px;
         font-family: 'IBM Plex Sans', sans-serif;
         font-size: 48px;
         color: #ffffff;
@@ -323,14 +378,12 @@ button {
     }
 
     .media {
+        padding-top: 50px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-content: space-around;
         flex-wrap: wrap;
-        position: absolute;
-        top: 740px;
-        z-index: 10;
         width: 100%;
         height: 536px;
     }
@@ -362,7 +415,7 @@ button {
         height: 204px; 
     }
 
-    div h2{
+    .from h2{
         font-family: 'IBM Plex Sans', sans-serif;
         font-weight: lighter;
         font-size: 48px;
@@ -441,12 +494,16 @@ button {
     
     .background2 {
         position: relative;
-        top: 10px;
+        top: 57px;
         width: 100%;
         height: 490px;
         background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-        clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 0% 100%);
+        clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0% 100%);
         z-index: 5;
+    }
+
+    .novedades {
+        text-align: center;
     }
 
     .novedades h2 {
@@ -454,7 +511,6 @@ button {
         font-size: 48px;
         color: #FFFFFF;
         letter-spacing: 0;
-        text-align: center;
         position: relative;
         top: 250px;
         font-weight: lighter;
@@ -465,14 +521,12 @@ button {
         width: 24%;
         height: 56px;
         position: relative;
-        margin: 72px 38%;
-        bottom: 280px;
+        margin: 0;
+        bottom: 200px;
         z-index: 10;
     }
 
     footer {
-        position: absolute;
-        top: 3800px;
         z-index: 10;
         height: 125px;
         width: 100%;
